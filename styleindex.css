@@ -1,0 +1,299 @@
+footer {
+    /*display: block;*/
+    font-family: monospace;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 22px;
+    font-style: oblique;
+    white-space: nowrap;
+    border-right: 1.2px solid;    /* Espesor de la linea que titilea */
+    width: 15ch;    /* Tamaño de la frase (inicia desde 0) */
+    height: 25px; /* largo de la linea que titilea */
+    animation: typing 3.5s steps(15), blink 0.5s step-end alternate;
+    animation-iteration-count: infinite;    /* Repite la animación */
+    overflow: hidden;
+}
+
+canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 800px;
+}
+
+.logo {
+    z-index: 1; /* Superpone un elemento sobre otro, aveces es -1 (depende del caso) */
+    position: absolute; /* Posicionamiento absoluto , tambien es necesario para la superposicion */
+}
+
+a:hover {
+    color: blueviolet;
+    /*color: red;
+    -webkit-mask: url(img/logo.svg) no-repeat center;
+    mask: url(img/logo.svg) no-repeat center;*/
+}
+
+body{
+    height: 100%;
+    grid-column: 1 / 4;
+    background: -webkit-linear-gradient(90deg,white,#2e619f, white, #2e619f);
+    animation: myani 7s ease-out infinite;
+    background-size: 400% 800%;
+}
+
+ 
+
+.logo-oracle-alura{
+    z-index: 1; /* Superpone un elemento sobre otro, aveces es -1 (depende del caso) */
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.div-footer {
+    background-color: #0A3871;
+    opacity: 0.6;
+    color: white;
+    border-radius: 0 0 100% 100%;
+    padding: 1rem;
+    margin-top: 10px;
+}
+
+.oculto{
+    display: none;
+}
+
+.deshabilitado:disabled {
+    cursor: not-allowed;
+    transform: none;
+    background: #2f68af !important;
+}
+
+.div-button{
+    text-align: center; /* Muy importante, centra los botones si estan lado a lado */
+    /* background: wheat; */
+    height: 200px;
+    margin-left: 70px;
+    margin-right: 70px;
+    border-radius: 12px;
+}
+
+.div-text-area{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+}
+
+#cartelGuardado{
+    position: absolute;
+    top: 16%;
+    left: 43%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    height: 15%;
+    background-color: rgba(63, 169, 255, 0.993);
+    border-radius: 40px;
+    color: rgba(255, 254, 235, 0.993);
+    font-family: monospace;
+    font-size: 160%;
+}
+
+#cartelGanaste{
+    position: absolute;
+    top: 16%;
+    left: 43%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    height: 15%;
+    border-radius: 40px;
+    color: green;
+    font-family: monospace;
+    font-size: 160%;
+}
+
+#cartelFin{
+    position: absolute;
+    top: 16%;
+    left: 43%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    height: 15%;
+    border-radius: 40px;
+    color: red;
+    font-family: monospace;
+    font-size: 160%;
+}
+
+#btnIniciarJuego {
+    display: block;
+    margin-left: auto; /* margin-left y margin-right centran el boton */
+    margin-right: auto;
+    margin-top: 150px;
+    margin-bottom: 15px;
+    color: white; /* Color de las letras del boton */
+    background-color: #0A3871;
+    border: none;
+    border-radius: 0.7rem;
+    padding: 1.5rem;    /* Espaciado entre la letra y los bordes del boton */
+    width: 200px;   /* Largo del boton */
+    cursor: pointer;
+    transition: all .75s; /* Delay en la transicion */
+}
+
+#boton-agregar{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;    
+    color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 1.25rem;     /* es como 20px */
+    width: 180px;
+    padding: 1rem;  
+    margin: auto;
+    cursor: pointer;
+    transition: all .75s;
+}
+
+#btnIniciarJuego:hover, #btnIniciarJuego:focus{
+    transform: scale(1.1);
+    color: #0A3871;
+    background-color: white;
+    border: 1px solid #0A3871;
+    filter: drop-shadow(0px 0px 10px #0A3871);
+}
+
+#boton-agregar:hover, #boton-agregar:focus{
+    transform: scale(1.1);
+    background-color: #0A3871;
+    color: white;
+    filter: drop-shadow(1px 1px 10px black);
+}
+
+#textarea-palabra{
+    margin: 75px 10px 15px; /* margen superior margen-laterales margen-inferior */
+    overflow:hidden; /* Elimina el scrollbar */
+    text-align: center; /* Se comienza a escribir desde el centro hacia afura */
+    font-size: 50px;
+    resize: none;
+}
+
+
+#botonGuardarEmpezar{
+    background-color: #0A3871;
+    width: 150px;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-right: 30px;
+    transition: all .75s;
+}
+
+#botonCancelar, #botonDesistir{
+    color: #0A3871;
+    background-color: white;
+    width: 130px;
+    border: 1px solid #0A3871;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-left: 30px;
+    transition: all .75s;
+}
+
+#botonNuevoJuego{
+    background-color: #0A3871;
+    width: 150px;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-top: 60vh;
+    transition: 0.6s all;
+}
+
+#botonNuevoJuego:hover{
+    transform: scale(1.04);
+}
+
+#botonNuevoJuego:active{
+    transform: scale(1.1);
+    background-color: #041a34;
+    border: 1px solid white;
+    filter: drop-shadow(0px 0px 10px #041a34);
+}
+
+#botonGuardarEmpezar:hover, #botonGuardarEmpezar:focus{
+    transform: scale(1.1);
+    color: #0A3871;
+    background-color: white;
+    border: 1px solid #0A3871;
+    filter: drop-shadow(0px 0px 10px #0A3871);
+}
+
+#botonCancelar:hover, #botonDesistir:hover, #botonCancelar:focus, #botonDesistir:focus{
+    transform: scale(1.1);
+    background-color: #0A3871;
+    color: white;
+    filter: drop-shadow(1px 1px 10px black);
+}
+
+#tableroGuiones{
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    height: 10%;
+    margin: auto;
+    padding: 10px;
+    font-size: 100%;
+}
+
+#tableroLetraIncorrecta{
+    display: flex;
+    justify-content: center;
+}
+
+.letra{
+    width: 25%;
+    height: 300%;
+    font-size: 360%;
+    font-family: monospace;
+    color:rgb(71, 67, 67);
+    text-align: center;
+    border-bottom: 4px solid rgb(71, 67, 67);
+    margin-top: 5%;
+    margin-right: 1vh;
+}
+
+#letrasIncorrectas{
+    display: flex;
+    justify-content: center;
+}
+
+#horca{
+    display: flex;
+    z-index: -1;
+    position: absolute;
+    max-height: 80%;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    50% { width: 15ch; /* Genera un "delay" para iniciar la animacion otra vez */ }
+    to { width: 100; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; /* Efecto de titileo */ }
+}
+

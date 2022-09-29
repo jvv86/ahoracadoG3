@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Juego de ahoracado, Challenge2</title>
+    <link rel="stylesheet" href="styleindex.css" />
+</head>
+
+<body>
+    <div>
+        <header>
+            <a>
+                <img src="imgs/logo.svg" class="logo" />
+            </a>
+            <img src="imgs/logo_oracleAlura.svg" class="logo-oracle-alura" />
+        </header>
+    </div>
+    <div class="div-footer">
+        <footer><span>&copy; 2022 - Johnny </span></footer>
+    </div>
+
+    <!-- Pagina de inicio -->
+    <main>
+        <div class="btnIniciar">
+            <input id="btnIniciarJuego" type="button" value="Iniciar juego" />
+        </div>
+        <div class="btnAgregar">
+            <input id="boton-agregar" type="button" value="Agregar nueva palabra" />
+        </div>
+    </main>
+
+    <!-- Pagina para jugar -->
+    <section id="seccion-ahorcado" class="oculto"> <!-- Inicializa la clase en oculto del archivo index.css -->
+        <div id="cartelGanar" class="oculto">
+            <div id="cartelGanaste">Ganaste, felicitaciones!</div>
+        </div>
+        <div id="cartelPerder" class="oculto">  <!-- Asi mismo el div inicializa en oculto -->
+            <div id="cartelFin">Fin del juego</div>
+        </div>
+
+        <div id="horca">
+            <img id="horca0" class="oculto" src="imgs/estados/base1.png" alt="MDN">
+            <img id="horca1" class="oculto" src="imgs/estados/08.png" alt="MDN">
+            <img id="horca2" class="oculto" src="imgs/estados/07.png" alt="MDN">
+            <img id="horca3" class="oculto" src="imgs/estados/06.png" alt="MDN">
+            <img id="horca4" class="oculto" src="imgs/estados/05.png" alt="MDN">
+            <img id="horca5" class="oculto" src="imgs/estados/04.png" alt="MDN">
+            <img id="horca6" class="oculto" src="imgs/estados/03.png" alt="MDN">
+            <img id="horca7" class="oculto" src="imgs/estados/02.png" alt="MDN">
+            <img id="horca8" class="oculto" src="imgs/estados/01.png" alt="MDN">
+        </div>
+
+        <div class="div-button">
+            <input id="botonNuevoJuego" type="button" value="Nuevo juego" />
+            <input id="botonDesistir" type="button" value="Desistir" />
+        </div>
+
+        <div id="tablero-horca">
+            <img class="img-horca"></img>
+        </div>
+        <div id="tableroGuiones"></div>
+        <div id="tableroLetraIncorrecta"></div>
+
+        <div id="letrasIncorrectas">
+            <h3><b><i>LETRAS INCORRECTAS:</i></b></h3>
+        </div>
+    </section>
+
+    <!-- Pagina para agregar palabra -->
+    <section id="seccion-agregar" class="oculto">
+        <div id="cartelGuardar" class="oculto">
+            <div id="cartelGuardado">¡Guardado!</div>
+        </div>
+        
+        <div class="div-text-area">
+            <textarea id="textarea-palabra" rows="1" cols="14" maxlength="12" placeholder="Palabra aqui"></textarea>
+        </div>
+        <div class="div-button">
+            <input id="botonGuardarEmpezar" type="button" value="Guardar y empezar" />
+            <input id="botonCancelar" type="button" value="Cancelar" />
+        </div>
+    </section> <!-- disabled class="deshabilitado"--> 
+
+    <script src="index.js"></script>
+    <script src="nuevaPalabra.js"></script>
+    <script src="logicaJuego.js"></script>
+    <script>
+        /*var typed = new Typed('.input', {
+        strings: ["yilmaz_", "yilmaz ev_", "_"],
+        typeSpeed: 100,
+        backSpeed:100,
+        loop:true,
+        });*/
+    </script>
+</body>
+
+</html>
